@@ -1,17 +1,12 @@
-/*
- * File: 0-putchar.c
- * Auth: Brennan D Baraban
- *
- */
-
+#include <stdio.h>
 #include "main.h"
 
 /**
- * main - Prints "_putchar" followed by a new line.
- *
- * Return: Always 0.
+ * main - Entry point.
+ * Description: write a program that prints "_putchar" followed by a new line.
+ * Return: Always 0 (Success.)
  */
-int _putchar(char c)
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
@@ -24,4 +19,4 @@ int _putchar(char c)
 	_putchar('\n');
 
 	return (0);
-}}
+}
