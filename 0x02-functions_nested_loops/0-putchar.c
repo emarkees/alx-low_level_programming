@@ -1,3 +1,9 @@
+/*
+ * File: 0-putchar.c
+ * Auth: Brennan D Baraban
+ *
+ */
+
 #include "main.h"
 
 /**
@@ -18,4 +24,4 @@ int _putchar(char c)
 	_putchar('\n');
 
 	return (0);
-}
+}}
