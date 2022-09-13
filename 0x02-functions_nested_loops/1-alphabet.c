@@ -1,4 +1,5 @@
 #include <main.h>
+#include <main.c>
 /**
  * print_alphabet - function to print abc
  *
