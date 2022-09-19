@@ -16,5 +16,5 @@ void _puts(char *str)
 		i++;
 		str++;
 	}
-	_putchar('\str');
+	_putchar('10');
 }
