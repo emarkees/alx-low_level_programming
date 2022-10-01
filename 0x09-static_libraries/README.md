@@ -1,2 +1,1 @@
-#!/bin/bnash
-Creating a Static Libraries
+Creating a Stalic lab
