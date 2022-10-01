@@ -1,24 +1,15 @@
 #include "main.h"
 
 /**
- * _islower - Shows 1 if the input is a lowercase character
- * @c: An input character
- * else it returns 0.
- * Description: function uses _putchar function to print
- * alphabet in lowercase 10 times.
+ * _islower - Checks if a character is lowercase.
+ * @c: The character to be checked.
  *
- * Return: 1 for lowercase character else 0.
+ * Return: 1 if character is lowercase, 0 otherwise.
  */
-
 int _islower(int c)
 {
-	if (c >= 97 && c <= 122)
-	{
+	if (c >= 'a' && c <= 'z')
 		return (1);
-	}
 	else
-	{
 		return (0);
-	}
-	_putchar('\n');
 }

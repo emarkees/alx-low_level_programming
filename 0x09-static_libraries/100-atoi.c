@@ -1,36 +1,25 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * _atoi - Converts a string to an integer.
- * @s: input string.
- *
- * Return: integer.
- */
+* _atoi - converts a string to an int
+* @s: the string to be changed
+*
+* Return: the converted int
+*/
 
 int _atoi(char *s)
 {
 	int sign = 1;
-	unsigned int total = 0;
-	char null_flag = 0;
+	unsigned int num = 0;
 
-	while (*s)
-	{
+	do {
 		if (*s == '-')
 			sign *= -1;
-
-		if (*s >= '0' && *s <= '9')
-		{
-			null_flag = 1;
-			total = total * 10 + *s - '0';
-		}
-
-		else if (null_flag)
+		else if (*s >= '0' && *s <= '9')
+			num = num * 10 + (*s - '0');
+		else if (num > 0)
 			break;
-		s++;
-	}
+	} while (*s++);
 
-	if (sign < 0)
-		total = (-total);
-
-	return (total);
+	return (num * sign);
 }

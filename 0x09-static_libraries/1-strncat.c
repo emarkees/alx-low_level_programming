@@ -1,12 +1,13 @@
 #include "main.h"
 /**
- *_strcat- append string
+ *_strncat- append string
  *@dest: checked
  *@src: checked
+ *@n: checked
  *Return: dest
  */
 
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;
 
@@ -22,7 +23,7 @@ char *_strcat(char *dest, char *src)
 
 	i = 0;
 
-	while (*(src + i) != '\0')
+	while (*(src + i) != *(src + n))
 	{
 		dest[j] = src[i];
 		i++;
